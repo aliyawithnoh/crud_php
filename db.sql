@@ -118,3 +118,8 @@ CREATE TABLE IF NOT EXISTS gallery (
     caption VARCHAR(255),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+INSERT INTO gallery (image_path) VALUES
+('https://images2.minutemediacdn.com/image/upload/c_crop,h_1349,w_2400,x_0,y_138/f_auto,q_auto,w_1100/v1628703164/shape/mentalfloss/649273-youtube-rick_astley.jpg'),
+('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3wB5tm_xYT_i9c-Q-5_7ADgwJtiE0_NZ0Hw&s');
+

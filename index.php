@@ -2,7 +2,7 @@
 require 'config.php';
 
 $services = $conn->query("SELECT id, name, price, description FROM services ORDER BY name ASC");
-$gallery = $conn->query("SELECT * FROM gallery ORDER BY created_at DESC LIMIT 6");
+// $gallery = $conn->query("SELECT * FROM gallery ORDER BY created_at DESC LIMIT 6");
 $success = "";
 $error = "";
 
@@ -122,14 +122,14 @@ if (isset($_POST['submit_booking'])) {
     </div>
 
     <!-- GALLERY SECTION -->
-    <h2 class="mt-5 mb-4 text-center">Gallery</h2>
+    <!-- <h2 class="mt-5 mb-4 text-center">Gallery</h2>
     <div class="row g-3">
         <?php while ($g = $gallery->fetch_assoc()): ?>
             <div class="col-md-4">
                 <img src="<?= $g['image_path'] ?>" class="img-fluid gallery-img shadow">
             </div>
         <?php endwhile; ?>
-    </div>
+    </div> -->
 
 </div>
 
